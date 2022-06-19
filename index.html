@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">Я HEADER</header>
+        <main class="main">
+            <div class="appointment">
+                <div class="appointment__container">
+                    <div class="appointment__body">
+                        <div class="appointment__title">Make an appointment</div>
+                        <form action="" class="appointment__form form">
+                            <div class="form__body">
+                                <div class="form__div"><input type="text" placeholder="Name" name="Name"
+                                        class="form__input"></div>
+                                <div class="form__div"><input type="email" placeholder="Email" name="Email"
+                                        class="form__input"></div>
+                                <div class="form__div"><input type="tel" placeholder="Phone Number" name="Phone Number"
+                                        class="form__input"></div>
+                                <div class="form__div"><input type="text" placeholder="Select Service"
+                                        name="Select Service" class="form__input"></div>
+                                <div class="form__div"><textarea name="about" id="about"
+                                        placeholder="Tell us about your puppers include his/her name"
+                                        class="form__about"></textarea></div>
+                            </div>
+                            <button class="form__button">Make an Appointment</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="summary">
+                <div class="summary__container">
+                    <div class="summary__body">
+                        <h1 class="summary__title">Summary</h1>
+                        <p class="summary__subtitle">Estimate Shipping and Tax</p>
+                        <p class="summary__text">Enter your destination to get a shipping estimate.</p>
+                        <form action="" class="summary__form form-del">
+                            <label for="country" class="form-del__label">Country</label>
+                            <select name="country" class="form-del__country" id="country">
+                                <option value="USA">USA</option>
+                                <option value="Brazil">Brazil</option>
+                                <option value="Germany">Germany</option>
+                                <option value="Ukraine">Ukraine</option>
+                            </select>
+                            <label for="state" class="form-del__label">State/Province</label>
+                            <input type="text" name="state" class="form__state" id="state">
+                            <label for="zip" class="form-del__label">Zip/Postal Code</label>
+                            <input type="number" name="zip" class="form__zip" id="zip">
+                            <div class="form-del__label">Standard Rate</div>
+                            <!-- Для радио и чекбокса надо что бы совпадало for и id у лейбла, и name у input -->
+                            <div class="form__radio form__radio_hed"><input type="radio" name="rate"
+                                    value="Standard Rate" id="shop" class="form__rate" id=""><label for="shop"
+                                    class="radio-span">Price may vary
+                                    depending on
+                                    the
+                                    item/destination. Shop Staff will contact you. $21.00</label></div>
+                            <div class="form-del__label">Pickup from store</div>
+                            <div class="form__radio form__radio_foot"><input id="city" type="radio"
+                                    value="Pickup from store" checked name="rate" class="form__rate" id="">
+                                <label for="city" class="radio-span">1234 Street Adress
+                                    City
+                                    Address,
+                                    1234 $0.00</label>
+                            </div>
+                            <p class=" summary__subtitle summary__subtitle_apply">Apply Discount Code</p>
+                            <label for="discount" class="form-del__label">Enter discount code</label>
+                            <input type="text" name="discount" placeholder="Enter Discount code" class="form__discount"
+                                id="">
+                            <button class="button-discount" type="submit"><span class="bt1">Apply</span><span
+                                    class="bt2">
+                                    Discount</span></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="register">
+                <div class="register__container">
+                    <div class="register__body">
+                        <h2 class="register__title">Registered Customers</h2>
+                        <p class="register__subtitle">If you have an account, sign in with your email address.</p>
+                        <form class="register__form form-register">
+                            <div class="form-register__item ">
+                                <label for="email" class="form-register__label">Email <span>*</span></label>
+                                <input type="email" class="form-register__input form-register__input_email" name="email"
+                                    placeholder="Your Name">
+                            </div>
+                            <div class="form-register__item">
+                                <label for="password" class="form-register__label">Password <span>*</span></label>
+                                <input type="password" name="password"
+                                    class="form-register__input form-register__input_password" placeholder="Your Name">
+                            </div>
+                            <div class="form-register__footer">
+                                <button class="form-register__button" type="submit">Sign In</button>
+                                <a href="#" class="form-register__link">Forgot Your Password?</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">Я FOOTER</footer>
+    </div>
+</body>
+
+</html>
